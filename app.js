@@ -5,9 +5,13 @@ let getTens = document.querySelector('.tens');
 let btnStart = document.querySelector('.btn-start');
 let btnStop = document.querySelector('.btn-stop');
 let btnReset = document.querySelector('.btn-reset');
+let interval;
 
 btnStart.addEventListener('click',()=>{
-    setInterval(startTimer, 10)
+    interval = setInterval(startTimer, 10)
+})
+btnStop.addEventListener('click',()=>{
+    clearInterval(interval);
 })
 
 function startTimer(){
