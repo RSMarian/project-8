@@ -13,7 +13,13 @@ btnStart.addEventListener('click',()=>{
 btnStop.addEventListener('click',()=>{
     clearInterval(interval);
 })
-
+btnReset.addEventListener('click',()=>{
+    clearInterval(interval);
+    tens = '00';
+    seconds = '00';
+    getSeconds.innerHTML = seconds;
+    getTens.innerHTML = tens;
+})
 function startTimer(){
     tens++;
     if(tens <= 9){
