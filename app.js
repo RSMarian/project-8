@@ -20,6 +20,7 @@ btnReset.addEventListener('click',()=>{
     getSeconds.innerHTML = seconds;
     getTens.innerHTML = tens;
 })
+
 function startTimer(){
     tens++;
     if(tens <= 9){
